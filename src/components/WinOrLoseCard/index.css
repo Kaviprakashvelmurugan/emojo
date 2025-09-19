@@ -1,0 +1,88 @@
+*{
+     font-family: "Lexend", sans-serif;
+}
+.won {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  border-width: 1px solid;
+  border-color: #ffffffcb;
+  background: #91919119;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+.won-box-1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gameStatus {
+  color: #d0d0d0;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+
+}
+.scoreHeading {
+  color: #c9c9c9;
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.scorePara {
+  color: #6a59ff;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  background-color: #ffce27;
+  color: #3d3d3d;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.won-box-2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.won-box-2 img {
+  width: 120px;
+}
+
+
+
+@media(max-width:768px){
+    .won{
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        width: 300px;
+    }
+    .won-box-1{
+       height: 50%;
+       width: 100%;
+       order: 2;
+    }
+
+    .won-box-2{
+       height: 50%;
+       width:100%;
+       order: 1;
+     }
+}
