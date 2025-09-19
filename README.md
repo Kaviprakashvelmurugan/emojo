@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+#  emojo – Emoji Memory Game  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Emojo is a **React-based memory challenge game** where players tap unique emojis without repeating any selection.  
+It demonstrates strong **React development skills**, state management, and a fun, interactive **UI/UX** experience.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+![Game Screenshot](./screenshots/emojo-home.png)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Key Features  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Memory Challenge Gameplay**  
+  - Tap emojis without selecting the same one twice.  
+  - The order of emojis **shuffles after every click** for extra difficulty.  
 
-### `npm test`
+- **Score & High Score Tracking**  
+  - Current score updates in real-time as you play.  
+  - **High score persists** for the session to encourage replayability.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Win or Lose Conditions**  
+  - **Win:** Successfully tap all 12 emojis without repeating.  
+  - **Lose:** Tap a duplicate emoji — the game ends instantly.  
 
-### `npm run build`
+- **Dynamic Status Updates**  
+  - Game status text updates after each action:  
+    - Initial message before starting  
+    - “You’re on a roll” when playing  
+    - Win or Lose messages on completion.
+      
+-  **Play Again Option**  
+  - Restart the game instantly with a single click after a win or loss.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-  **Modern User Interface**  
+  - Built with **React Class & Functional Components** (mix of both).  
+  - Smooth animations on emoji click using CSS transitions.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-  **Responsive Design**  
+  - Fully responsive layout optimized for mobile, tablet, and desktop screens.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+##  Screenshots  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###  Home Page  
+![Home Page](./screenshots/emojo-home.png)  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###  Emojo on tablet 
+![Home Page](./screenshots/emojo-tablet.png)  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+###  Emojo on mobile 
+![Home Page](./screenshots/emojo-mobile.png)  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+###  when Hover on emoji
+![Shuffle](./screenshots/emojo-hover.png)  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🏆 Win Screen  
+![Win Screen](./screenshots/emojo-game-won.png)  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 💔 Lose Screen  
+![Lose Screen](./screenshots/emojo-game-over.png)  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##  Tech Stack  
 
-### Analyzing the Bundle Size
+- **Frontend:** React.js (Class + Functional Components)  
+- **State Management:** React `setState`, hooks (`useRef`) for animations  
+- **Styling:** CSS3 (animations, responsive layout)  
+- **Logic:** Conditional rendering for win/lose screens, score calculation, and shuffle algorithm  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ⚙️ How It Works  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Start the Game**  
+   - The game begins when the user clicks any emoji.  
 
-### Advanced Configuration
+2. **Gameplay**  
+   - Click emojis one by one without repeating any previously clicked emoji.  
+   - Emojis **shuffle** after each click to increase difficulty.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **Winning or Losing**  
+   - **Win:** Click all 12 unique emojis successfully.  
+   - **Lose:** Click a duplicate emoji.  
 
-### Deployment
+4. **Play Again**  
+   - Click **Play Again** to restart with scores reset.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
